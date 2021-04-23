@@ -1,8 +1,154 @@
-#jssquare{
-    width: 10rem;
-    height: 10rem;
-    background-color: black;
-    margin-top: 2rem;
-    position: relative;
-    margin: auto;
-}
+body{
+    background-image: url("download (3).jpeg");
+    overflow-x: hidden;
+    }
+    
+    #jssquare{
+        width: 15rem;
+        height: 15rem;
+        margin-top: 2rem;
+        position: relative;
+        margin: auto;
+        margin-right: 47%;
+        margin-top: 15rem;
+    }
+    
+    .bun{
+        width: 20rem;
+    }
+    
+    .button{
+        position: relative;
+        font-family: sans-serif;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+    
+    .allign{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .kitty{
+        width: 40rem;
+        position: relative;
+        bottom: 14rem;
+        left: 120rem;
+        animation: kitty 30s infinite;
+    }
+    
+    @keyframes kitty {
+        0%{
+            left: 120rem;
+        }
+    
+        100%{
+            left: -120rem;
+        }
+    
+    }
+    
+    .run{
+        text-align: center;
+        font-size: 6rem;
+        font-family: sans-serif;
+        color: red;
+        animation: run 3s 1 ;
+        animation-delay:2s ;
+        opacity: 0;
+        margin-bottom: -10rem;
+    }
+    
+    @keyframes run {
+         0%{
+             opacity: 0%;
+         }
+    
+         50%{
+             opacity: 100%;
+         }
+    
+         100%{
+             opacity: 0%;
+         }
+    }
+    
+    .kitty2{
+        width: 40rem;
+        position: relative;
+        bottom: 32rem;
+        left: -120rem;
+        animation: kitty2 30s infinite;
+        animation-delay: 8s;
+    }
+    
+    @keyframes kitty2 {
+        0%{
+            left: -120rem;
+        }
+    
+        100%{
+            left: 120rem;
+        }
+    
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .kitty2{
+            bottom: 30rem;
+        }
+        .button{
+            font-size: 2rem;
+        }
+    }
+    
+    @media screen and (max-width: 755px) {
+      .kitty{
+         width: 25rem;
+      }
+    
+      .kitty2{
+         width: 25rem;
+         bottom: 25rem;
+      }
+    
+      .bun{
+        width: 15rem;
+        margin-left: 5rem;
+      }
+    
+    }
+    
+    @media screen and (max-width: 375px) {
+    .button{
+        font-size: 1rem;
+    }
+    
+    .kitty{
+        width: 15rem;
+     }
+    
+     .kitty2{
+        width: 15rem;
+        bottom: 20rem;
+     }
+    
+     .bun{
+       width: 10rem;
+       margin-left: 6rem;
+     }
+    
+     .run{
+         font-size: 3rem;
+     }
+    
+    }
+    
+
+
+
